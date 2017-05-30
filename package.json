@@ -1,0 +1,23 @@
+{
+  "name": "nav.regulations",
+  "version": "0.0.1",
+  "description": "RIPAM, etc.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnauldvm/nav.regulations.git"
+  },
+  "keywords": [
+    "sail",
+    "regulations"
+  ],
+  "author": "Arnauld Van Muysewinkel",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/arnauldvm/nav.regulations/issues"
+  },
+  "homepage": "https://github.com/arnauldvm/nav.regulations#readme"
+}
