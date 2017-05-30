@@ -4,6 +4,7 @@
   "description": "RIPAM, etc.",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,12 +13,16 @@
   },
   "keywords": [
     "sail",
-    "regulations"
+    "regulations",
+    "electron"
   ],
   "author": "Arnauld Van Muysewinkel",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/arnauldvm/nav.regulations/issues"
   },
-  "homepage": "https://github.com/arnauldvm/nav.regulations#readme"
+  "homepage": "https://github.com/arnauldvm/nav.regulations#readme",
+  "devDependencies": {
+    "electron": "^1.6.10"
+  }
 }
