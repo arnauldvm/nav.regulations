@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>RIPAM - Feux et marques</title><!-- TODO avoid redundant title -->
+    <link rel="stylesheet" href="assets/css/window.css">
   </head>
   <body>
     <h1>RIPAM - Feux et marques</h1><!-- TODO avoid redundant title -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="footer">We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.</div>
+    <canvas id="base" class="lights_frame" width="200" height="200">
+      Canvas element not supported by browser
+    </canvas>
   </body>
+  <script src="./renderer.js" async></script>
 </html>
