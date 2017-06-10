@@ -70,3 +70,7 @@ const light = module.exports.light = function(/* CanvasRenderingContext2D */ ctx
   ctx.fill();
   ctx.restore();
 }
+
+module.exports.lightCompact = function(/* CanvasRenderingContext2D */ ctx, /* String[2] */ lightDescription, /* ViewE */ view) {
+  light(ctx, lightDescription[0], lightDescription[1], view);
+}
