@@ -54,7 +54,7 @@ const ViewE = module.exports.ViewE = Object.freeze({
   }
 });
 
-module.exports.light = function(ctx, position, color, view) {
+const light = module.exports.light = function(/* CanvasRenderingContext2D */ ctx, /* PositionE */ position, /* ColorE */ color, /* ViewE */ view) {
   const xyz = PositionE.xyz[position];
   const rgb = ColorE.rgb[color];
   const horiz = ViewE.horiz[view];
