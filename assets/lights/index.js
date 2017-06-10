@@ -75,6 +75,10 @@ const lightCompact = module.exports.lightCompact = function(/* CanvasRenderingCo
   light(ctx, lightDescription[0], lightDescription[1], view);
 }
 
-module.exports.lightsMultiple = function(/* CanvasRenderingContext2D */ ctx, /* String(2)[] */ lightDescriptions, /* ViewE */ view) {
+const lightsMultiple = module.exports.lightsMultiple = function(/* CanvasRenderingContext2D */ ctx, /* String(2)[] */ lightDescriptions, /* ViewE */ view) {
   for (var idx in lightDescriptions) lightCompact(ctx, lightDescriptions[idx], view);
+}
+
+module.exports.lightsMultipleCompact = function(/* CanvasRenderingContext2D */ ctx, /* String */ lightDescriptions, /* ViewE */ view) {
+  lightsMultiple(ctx, lightDescriptions.split('+'), view);
 }

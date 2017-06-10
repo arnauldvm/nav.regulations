@@ -6,7 +6,8 @@ if (canvas.getContext) {
   // lights.light(ctx, lights.PositionE.MAST, lights.ColorE.WHITE, view);
   // lights.light(ctx, lights.PositionE.RIGHT, lights.ColorE.GREEN, view);
   // lights.lightCompact(ctx, "LR", view);
-  lights.lightsMultiple(ctx, [ "MW", "RG", "LR"], view)
+  // lights.lightsMultiple(ctx, [ "MW", "RG", "LR"], view);
+  lights.lightsMultipleCompact(ctx, "MW+RG+LR", view);
 } else {
   // canvas unsupported
 }
