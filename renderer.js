@@ -6,7 +6,7 @@ const createOption = function(value, text) {
 };
 
 const lightSelect = document.getElementById('lightSelect');
-const lightsDataList = require("./data/lights.json");
+const lightsDataList = require("./data/boats.json");
 lightsDataList.forEach(function(lightData) {
   var option = document.createElement("option");
   lightSelect.appendChild(createOption(lightData.definition, lightData.description));
