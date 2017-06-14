@@ -34,15 +34,15 @@ const PositionE = module.exports.PositionE = Object.freeze({
     // y: longitudinal from 0 (left) to 1 (right)
     // z: vertical from 0 (see level) to 1 (top of the mast)
     'M': [0.3, 0.5, 1],
-    'B': [1, 0.5, 0.25],
+    'B': [1, 0.5, 0.5],
     'S': [0, 0.5, 0.25],
     'R': [0.5, 1, 0.25],
     'L': [0.5, 0, 0.25]
   },
   orientations: { // cf. ViewE
     'M': "frLR",
-    'B': "f", // fRL?
-    'S': "r", // rRL?
+    'B': "fRL", // visible sur tout l'horizon (mais caché de l'avant)
+    'S': "rRL", // visible sur tout l'horizon (mais caché de l'arrière (?))
     'R': "fR",
     'L': "fL"
   }
