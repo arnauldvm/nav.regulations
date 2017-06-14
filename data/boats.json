@@ -1,4 +1,5 @@
 [
   { "description": "Navire au mouillage de longueur inférieure à 50 m", "definition": "MW" },
+  { "description": "Navire au mouillage de longueur supérieure à 50 m", "definition": "BW+SW" },
   { "description": "Navire de longueur inférieure à 50 m faisant route", "definition": "MW+RG+LR" }
 ]
