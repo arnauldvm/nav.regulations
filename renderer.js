@@ -11,11 +11,12 @@ const lights = require('./assets/lights');
 const canvas = document.getElementById('base');
 if (canvas.getContext) {
   const ctx = canvas.getContext('2d');
-  lightSelect.onchange = function() {
+  const redraw = function() {
     var view = lights.ViewE.FRONT;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     lights.lightsMultipleCompact(ctx, lightSelect.value, view);
   };
+  lightSelect.onchange = redraw;
 } else {
   // canvas unsupported
 }
