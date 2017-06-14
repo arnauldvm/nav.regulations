@@ -1,4 +1,4 @@
 [
   { "description": "Navire au mouillage de longueur inférieure à 50 m", "definition": "MWfrLR" },
-  { "description": "Navire de longueur inférieure à 50 m faisant route droit vers l’observateur", "definition": "MWfrLR+RGfR+LRfL" }
+  { "description": "Navire de longueur inférieure à 50 m faisant route", "definition": "MWfrLR+RGfR+LRfL" }
 ]
