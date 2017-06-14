@@ -84,6 +84,7 @@ const light = module.exports.light = function(/* CanvasRenderingContext2D */ ctx
   ctx.fillStyle = rgb;
   const x = ctx.canvas.width / 2 + (horiz.dir*(xyz[horiz.axis]-0.5))*width;
   const y = MARGIN + xyz[2]*width;
+  // TODO: take orientation of light into account!
   ctx.beginPath();
   ctx.arc(x, y, LIGHT_SIZE, 0, Math.PI*2);
   ctx.fill();
