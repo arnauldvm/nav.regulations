@@ -64,6 +64,12 @@ const ViewE = module.exports.ViewE = Object.freeze({
     'r': {axis: 1, dir: +1},
     'R': {axis: 0, dir: +1},
     'L': {axis: 0, dir: -1}
+  },
+  name: {
+    'f': {en: "Front view", fr: "Vue de face"},
+    'r': {en: "Rear view", fr: "Vue de derrière"},
+    'R': {en: "Right view", fr: "Vue de droite"},
+    'L': {en: "Left view", fr: "Vue de gauche"}
   }
 });
 
