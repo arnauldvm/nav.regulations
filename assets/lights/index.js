@@ -38,6 +38,13 @@ const PositionE = module.exports.PositionE = Object.freeze({
     'S': [0, 0.5, 0.25],
     'R': [0.5, 1, 0.25],
     'L': [0.5, 0, 0.25]
+  },
+  orientations: { // cf. ViewE
+    'M': "frLR",
+    'B': "f", // fRL?
+    'S': "r", // rRL?
+    'R': "fR",
+    'L': "fL"
   }
 });
 
@@ -73,7 +80,8 @@ const ViewE = module.exports.ViewE = Object.freeze({
   }
 });
 
-const light = module.exports.light = function(/* CanvasRenderingContext2D */ ctx, /* PositionE */ position, /* ColorE */ color, /* ViewE[] */ orientations, /* ViewE */ view) {
+const light = module.exports.light = function(/* CanvasRenderingContext2D */ ctx, /* PositionE */ position, /* ColorE */ color, /* ViewE */ view) {
+  const orientations = PositionE.orientations[position];
   var visible = false;
   for (var idx in orientations) {
     if (orientations[idx]==view) visible = true;
@@ -96,7 +104,7 @@ const light = module.exports.light = function(/* CanvasRenderingContext2D */ ctx
 }
 
 const lightCompact = module.exports.lightCompact = function(/* CanvasRenderingContext2D */ ctx, /* String(n>2) */ lightDescription, /* ViewE */ view) {
-  light(ctx, lightDescription[0], lightDescription[1], lightDescription.slice(2), view);
+  light(ctx, lightDescription[0], lightDescription[1], view);
 }
 
 const lightsMultiple = module.exports.lightsMultiple = function(/* CanvasRenderingContext2D */ ctx, /* String(n>2)[] */ lightDescriptions, /* ViewE */ view) {
